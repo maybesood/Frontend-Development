@@ -1,0 +1,79 @@
+body{
+    background-color: black;
+}
+
+nav ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    color:white;
+    font-weight: bold;
+    gap:20px;
+    font-size: 30px;
+}
+.img img{
+    height:50px;
+    width:50px;
+}
+
+.section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.left{
+    padding:60px;
+}
+
+.right video{
+    width:700px;
+}
+.song1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    width: 400px;
+    padding: 5px;
+    margin: 10px;
+}
+.song{
+    color:black;
+    flex: 1; /* Let the song title take up the remaining space */
+    color: black;
+    margin: 0 10px; /* Adjust this margin as needed */
+    
+}
+.time{
+    color:black;
+    margin-left: 10px;
+}
+.play img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Adjust this margin as needed */
+}
+
+@media (min-width:135px) and (max-width:1000px){
+    .right video{
+        display:none;
+    }
+}
+
+@media(max-width:139px){
+    .song1{
+        width:200px;
+    }
+}
+
+
+.click-pause{
+    display: none;
+}
